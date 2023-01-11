@@ -19,9 +19,7 @@ jobs:
             env:
                 URL: ${{ secrets.URL }}
                 UNAME: ${{ secrets.USERNAME }}
-                PASS: ${{ secrets.PASSWORD }}
-            with:
-              directory: 'path of directory to scan (optional)'
+                PASS: ${{ secrets.PASSWORD }}          
           
           - name: Upload SARIF file
             uses: github/codeql-action/upload-sarif@v1
