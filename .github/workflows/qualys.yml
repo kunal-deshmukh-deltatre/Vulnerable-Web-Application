@@ -2,10 +2,7 @@ name: Qualys IAC Scan
 on:
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main 
+      - master
 jobs:
     Qualys_iac_scan:
         runs-on: ubuntu-latest
